@@ -1,0 +1,41 @@
+{
+  "name": "@usamadev/google-maps-react",
+  "version": "1.0.0",
+  "description": "A plug-and-play Google Maps component for React / Next.js with built-in zoom, fullscreen, locate-me and layer controls",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.64.0",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "google-maps",
+    "react",
+    "nextjs",
+    "maps",
+    "geolocation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Usama-Akbar/google-maps-api-react"
+  }
+}
